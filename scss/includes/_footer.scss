@@ -1,0 +1,21 @@
+footer {
+    font-size: 0.7rem;
+    .exeltive {
+        white-space: nowrap;
+        img {
+            width: 60px;
+            margin-top: -4px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    footer {
+        .logo {
+            img {
+                width: 40px;
+            }
+        }
+        font-size: 0.6rem;
+    }
+}

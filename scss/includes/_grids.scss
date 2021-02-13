@@ -1,0 +1,115 @@
+.company-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.5fr 0.5fr 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    align-items: end;
+    grid-template-areas:
+        "gridcontent gridcontent hh"
+        "gridcontent gridcontent img1"
+        "img2 img2 img1"
+        "img2 img2 img3"
+        "img4 img5 img5"
+        "img6 img5 img5";
+    .content {
+        grid-area: gridcontent;
+        align-self: start;
+    }
+    div {
+        &:nth-of-type(2) {
+            grid-area: img1;
+        }
+        &:nth-of-type(3) {
+            grid-area: img2;
+        }
+        &:nth-of-type(4) {
+            grid-area: img3;
+        }
+        &:nth-of-type(5) {
+            grid-area: img4;
+        }
+        &:nth-of-type(6) {
+            grid-area: img5;
+        }
+        &:nth-of-type(7) {
+            grid-area: img6;
+        }
+    }
+    .img-wrapper {
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+}
+
+@media (max-width: 991.5px) {
+    .company-grid {
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 767.5px) {
+    .company-grid {
+        display: none;
+    }
+}
+
+.custom-grid-sm {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 15px;
+    grid-template-areas:
+        "img1 img2"
+        "img1 img3";
+
+    .img-wrapper {
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        min-height: 200px;
+    }
+    div {
+        &:nth-of-type(1) {
+            grid-area: img1;
+        }
+        &:nth-of-type(2) {
+            grid-area: img2;
+        }
+        &:nth-of-type(3) {
+            grid-area: img3;
+        }
+    }
+}
+
+@media (max-width: 991.5px) {
+    .custom-grid-sm {
+        grid-template-rows: 1fr 1fr;
+        .img-wrapper {
+            min-height: 150px;
+        }
+    }
+}
+
+@media (max-width: 767.5px) {
+    .custom-grid-sm {
+        grid-template-rows: 1fr 1fr;
+        .img-wrapper {
+            min-height: 100px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .custom-grid-sm {
+        grid-gap: 8px;
+        grid-template-rows: 1fr 1fr;
+        .img-wrapper {
+            min-height: 65px;
+        }
+    }
+}
