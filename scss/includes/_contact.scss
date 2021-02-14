@@ -24,6 +24,9 @@
             border: 0;
             border-bottom: 2px solid #fff;
         }
+        &.is-invalid {
+            border-bottom: 2px solid #ca303c;
+        }
     }
     textarea {
         height: 100%;
@@ -43,24 +46,6 @@
     }
 }
 
-.modal {
-    &.fade {
-        .modal-dialog {
-            transition: -webkit-transform 0.15s ease-out;
-            transition: transform 0.15s ease-out;
-            transition: transform 0.15s ease-out,
-                -webkit-transform 0.15s ease-out;
-            -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-        }
-    }
-    &.show {
-        .modal-dialog {
-            -webkit-transform: none;
-            transform: none;
-        }
-    }
-    .modal-content {
-        border-radius: 20px;
-    }
+#contact-alert-container {
+    display: none;
 }

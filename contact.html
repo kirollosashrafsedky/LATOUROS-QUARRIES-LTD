@@ -39,6 +39,10 @@
         <meta name="msapplication-navbutton-color" content="#2a6cf0" />
     </head>
     <body>
+        <div class="splash-screen">
+            <img src="imgs/svg/logo.svg" alt="logo" class="img-fluid mb-3" />
+            <h5 class="michroma">Loading...</h5>
+        </div>
         <nav class="navbar navbar-expand-md navbar-light" id="main-nav">
             <div class="container px-0">
                 <a
@@ -191,13 +195,13 @@
             <section class="bg-green">
                 <div class="container py-5">
                     <form class="contact-form py-4" id="contact-form">
+                        <div id="contact-alert-container"></div>
                         <div class="row">
                             <div class="col-12 col-lg-8 mb-4 mb-lg-0">
-                                <h2 class="michroma">
+                                <h2 class="michroma mb-4">
                                     FURTHER <br />
                                     INQUIRES?
                                 </h2>
-
                                 <div class="row">
                                     <div class="col-12 col-lg-6">
                                         <input
@@ -206,6 +210,7 @@
                                             name="name"
                                             id="name"
                                             class="mb-3"
+                                            data-validate="required"
                                         />
                                         <input
                                             type="email"
@@ -213,6 +218,7 @@
                                             name="email"
                                             id="email"
                                             class="mb-3"
+                                            data-validate="required"
                                         />
                                         <input
                                             type="text"
@@ -220,6 +226,7 @@
                                             name="phone"
                                             id="phone"
                                             class="mb-3 mb-lg-0"
+                                            data-validate="required"
                                         />
                                     </div>
                                     <div class="col-12 col-lg-6">
@@ -228,6 +235,7 @@
                                             id="message"
                                             rows="5"
                                             placeholder="Message"
+                                            data-validate="required"
                                         ></textarea>
                                     </div>
                                 </div>

@@ -1,7 +1,8 @@
 .company-swiper,
 .facilities-swiper,
 .sustainability-swiper,
-.sustainability-swiper-2 {
+.sustainability-swiper-2,
+.modal .swiper-container {
     position: relative;
     .swiper-container {
         width: calc(100% - 130px);
@@ -36,11 +37,27 @@
     }
 }
 
+.modal .swiper-container {
+    border-radius: 20px;
+    .swiper-button-prev,
+    .swiper-button-next {
+        border: 2px solid #000;
+        background-image: url("../imgs/svg/arrow-left-black.svg");
+    }
+    .swiper-button-next {
+        right: 5px;
+    }
+    .swiper-button-prev {
+        left: 5px;
+    }
+}
+
 @media (max-width: 575.5px) {
     .company-swiper,
     .facilities-swiper,
     .sustainability-swiper,
-    .sustainability-swiper-2 {
+    .sustainability-swiper-2,
+    .modal .swiper-container {
         .swiper-container {
             width: calc(100% - 80px);
         }
