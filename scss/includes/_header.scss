@@ -1,6 +1,6 @@
 header {
     height: calc(100vh - 105px);
-    min-height: 700px;
+    min-height: 650px;
     position: relative;
     .pagination-container {
         position: absolute;
@@ -14,7 +14,7 @@ header {
             top: 3rem;
             right: 0px;
             width: 80px;
-            height: calc(40% - 80px);
+            height: calc(35% - 80px);
             z-index: 10;
             .swiper-pagination-progressbar {
                 background-color: #f7f6f4;
@@ -49,8 +49,8 @@ header {
     .swiper-slide {
         height: 100%;
         .slide-top {
-            min-height: 260px;
-            height: 40%;
+            // min-height: 260px;
+            height: 35%;
             display: flex;
             align-items: center;
             .slide-content {
@@ -62,7 +62,7 @@ header {
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            height: 60%;
+            height: 65%;
         }
     }
 }
