@@ -1,4 +1,6 @@
 header {
+    height: calc(100vh - 105px);
+    min-height: 700px;
     position: relative;
     .pagination-container {
         position: absolute;
@@ -12,14 +14,14 @@ header {
             top: 3rem;
             right: 0px;
             width: 80px;
-            height: calc(100% - 420px);
+            height: calc(40% - 80px);
             z-index: 10;
             .swiper-pagination-progressbar {
                 background-color: #f7f6f4;
                 right: 5px;
                 top: 0;
                 width: 2px;
-                height: 75%;
+                height: 80%;
                 z-index: 11;
                 span {
                     background-color: #616161;
@@ -39,9 +41,16 @@ header {
 }
 
 .header-swiper {
+    height: 100%;
+    .swiper-container,
+    .swiper-wrapper {
+        height: 100%;
+    }
     .swiper-slide {
+        height: 100%;
         .slide-top {
             min-height: 260px;
+            height: 40%;
             display: flex;
             align-items: center;
             .slide-content {
@@ -53,12 +62,15 @@ header {
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            height: 350px;
+            height: 60%;
         }
     }
 }
 
 @media (max-width: 991.5px) {
+    header {
+        height: calc(100vh - 95px);
+    }
     .header-swiper {
         .swiper-slide {
             .slide-top {
@@ -66,16 +78,6 @@ header {
                     max-width: 600px;
                     font-size: 1.7rem;
                 }
-            }
-            .slide-bottom {
-                height: 300px;
-            }
-        }
-    }
-    header {
-        .pagination-container {
-            .pagination-wrapper {
-                height: calc(100% - 370px);
             }
         }
     }
@@ -90,21 +92,14 @@ header {
                     font-size: 1.5rem;
                 }
             }
-            .slide-bottom {
-                height: 250px;
-            }
-        }
-    }
-    header {
-        .pagination-container {
-            .pagination-wrapper {
-                height: calc(100% - 330px);
-            }
         }
     }
 }
 
 @media (max-width: 575.5px) {
+    header {
+        height: calc(100vh - 90px);
+    }
     .header-swiper {
         .swiper-slide {
             .slide-top {
@@ -114,17 +109,12 @@ header {
                     font-size: 1.2rem;
                 }
             }
-            .slide-bottom {
-                height: 200px;
-            }
         }
     }
     header {
         .pagination-container {
             .pagination-wrapper {
-                top: 1.5rem;
                 right: 15px;
-                height: calc(100% - 250px);
                 .slide-no {
                     font-size: 0.8rem;
                 }

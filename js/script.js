@@ -68,7 +68,7 @@ $(document).ready(function() {
         fadeEffect: {
             crossFade: true
           },
-          autoHeight: true,
+        //   autoHeight: true,
         pagination: {
             el: '.header-swiper .swiper-pagination',
             type: 'progressbar',
@@ -76,7 +76,7 @@ $(document).ready(function() {
             },
         loop: true,
         autoplay: {
-            delay: 3000,
+            delay: 5000,
             disableOnInteraction: false,
         },
         on: {
